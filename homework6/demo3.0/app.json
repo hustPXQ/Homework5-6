@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/catalog/catalog",
+    "pages/cart/cart",
+
+    "pages/menu/menu",
+    "pages/detail/detail",
+    "pages/user/user"
+  ],
+  "window":{
+  	"backgroundColor": "#eee",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "西一食堂欢迎您",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+  	"list": [{
+  		"pagePath": "pages/catalog/catalog",
+  		"text": "目录",
+  		"iconPath": "assets/tabbar/menu.png",
+  		"selectedIconPath": "assets/tabbar/menus.png"
+  	}, {
+  		"pagePath": "pages/cart/cart",
+  		"text": "订单",
+  		"iconPath": "assets/tabbar/cart.png",
+  		"selectedIconPath": "assets/tabbar/carts.png"
+  	}, {
+  		"pagePath": "pages/user/user",
+  		"text": "我",
+  		"iconPath": "assets/tabbar/home.png",
+  		"selectedIconPath": "assets/tabbar/homes.png"
+  	}],
+  	"backgroundColor": "#fff",
+  	"color": "#000",
+  	"selectedColor": "#248F53",
+  	"borderStyle": "white",
+  	"position": "bottom"
+  }
+}

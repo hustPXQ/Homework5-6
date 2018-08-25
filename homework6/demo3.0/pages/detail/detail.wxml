@@ -1,0 +1,31 @@
+<image class="detail-image" src="{{product.img}}" mode="aspectFill" />
+<view class="item-info">
+	<view class="like {{product.like ? 'active' : ''}}" catchtap="onLikeClick" data-id='{{product.id}}'></view>
+	<text class="item-price">￥{{product.prices[selected].price}}</text>
+</view>
+<view class="desc-container">
+	<text class="item-desc">{{product.description}}</text>
+</view>
+<view class="item-controls">
+	<view class="item-number item-control text-center">
+		<text class="item-control-caption">数量</text>
+		<view class="number-control">
+			<view class="item-dec number-modification" bindtap="onNumberChange" data-dir='0'>-</view>
+			<text class="item-number-display number-modification">{{number}}</text>
+			<view class="item-inc number-modification" bindtap="onNumberChange" data-dir='1'>+</view>
+		</view>
+	</view>
+	<view class="item-control text-center item-size">
+		<text class="item-control-caption">添加？</text>
+		<picker class="size-control" value='{{selected}}' range='{{product.prices}}' range-key='size' bindchange='onSizeChange'>
+			<view class="picker">
+				<text>{{product.prices[selected].size}}</text>
+				<view class="angle angle-down picker-angle"></view>
+			</view>
+		</picker>
+	</view>
+</view>
+<button class="select-product" hover-class='button-hover' hover-stay-time='100' bindtap="onSubmit">
+	<text class="total-price">￥{{number * product.prices[selected].price}}</text>
+	<text class="a">添加到订单</text>
+</button>

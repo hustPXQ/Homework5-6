@@ -1,0 +1,15 @@
+<import src="/templates/item.wxml" />
+<view class='hero'>
+	<image class='hero-img img-bg' mode='aspectFill' src='/assets/menu/{{hero[catalog].img}}' />
+	<view class='mask'>
+	</view>
+	<text class="subtitle txt-white middle">{{hero[catalog].text}}</text>
+</view>
+<view class='product-list' wx:if='{{products.length > 0}}'>
+	<block wx:for="{{products}}" wx:for-item="item" wx:for-index='i'>
+		<template is="list-item" data="{{obj: item, index: i}}"></template>
+	</block>
+</view>
+<view class="product-list no-product text-center" wx:else>
+	<text class='txt-gray content'>{{emptyText}}</text>
+</view>

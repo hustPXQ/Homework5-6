@@ -1,0 +1,25 @@
+<view class="bg">
+	<view class="bg-mask"></view>
+	<image class="user-bg" src='{{bgUrl}}' mode='aspectFill'></image>
+</view>
+<view class="user-info">
+	<image class="avatar" src="{{avatarUrl}}" mode='aspectFit'></image>
+	<text class="user-name">NXF</text>
+</view>
+<view class="user-data">
+	<view class="half">
+		<text class="default">喜欢</text>
+		<text class="default">6</text>
+	</view>
+	<view class="half">
+		<text class="default">历史</text>
+		<text class="default">21</text>
+	</view>
+</view>
+<view class="divider divider-short center"></view>
+<view class="top-sale">
+	<text class="default">今日热销</text>
+	<view class="item-container">
+		
+	</view>
+</view>

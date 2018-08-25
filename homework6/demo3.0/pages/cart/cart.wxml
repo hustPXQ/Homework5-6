@@ -1,0 +1,32 @@
+<block wx:if='{{cart.length}}'>
+	<view class="cart-item" wx:for='{{cart}}' wx:for-index='i' wx:for-item='elem' wx:key="index">
+		<image class="thumb" mode='aspectFill' src='{{elem.thumb}}'></image>
+		<view class="cart-item-info">
+			<text class="item-name">{{elem.name}}</text>
+			<text class="item-price">￥{{elem.price}}</text>
+		</view>
+		<view class="number-control">
+			<view class="ctrl" catchtap='onCountClick' data-mod='-1' data-index='{{i}}'>-</view>
+			<text class="item-number">{{elem.count}}</text>
+			<view class="ctrl" catchtap='onCountClick' data-mod='1' data-index='{{i}}'>+</view>
+		</view>
+	</view>
+  
+  <view class="payli0">
+      <view class="paylable0">备注</view>
+      <view>
+        <textarea class="textarea0"></textarea>
+      </view>
+      <view class="clear"></view>
+    </view>
+
+	<view class="bottom-controls clearfix">
+		<text class="amount-label">总价</text>
+		<text class="cart-subtotal">￥{{total}}</text>
+		<button class="btn-checkout" hover-stay-time='100' bindtap='onCheckout'>付款</button>
+	</view>
+</block>
+<view class="middle empty" wx:else>
+	<text class="text-empty">订单是空的, 去店里逛逛吧!</text>
+	<button class="button-empty" hover-stay-time='100' bindtap='onCartEmptyBtnClick'>去逛逛</button>
+</view>

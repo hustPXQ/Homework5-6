@@ -1,0 +1,68 @@
+.default {
+	color: #95989A;
+	font-size: 40rpx;
+}
+.bg {
+	position: relative;
+	font-size: 0;
+	z-index: -1;
+}
+.user-bg {
+	width: 100%;
+	height: 328rpx;
+}
+.bg-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .53);
+}
+.user-info {
+	margin-top: -174rpx;
+	position: relative;
+	width: 100%;
+}
+.avatar {
+	border-radius: 50%;
+	width: 234rpx;
+	height: 234rpx;
+	margin-left: 46rpx;
+}
+.user-name {
+	color: #fff;
+	font-size: 48rpx;
+	position: absolute;
+	left: 320rpx;
+	top: 72rpx;
+	max-width: 380rpx;
+}
+.user-data {
+	width: 100%;
+	margin-top: 30rpx;
+	font-size: 0;
+}
+.half {
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+}
+.half > text {
+	display: block;
+	color: #95989A;
+	margin-bottom: 20rpx;
+	font-size: 40rpx;
+}
+.divider {
+	margin-top: 60rpx;
+}
+
+.top-sale {
+	width: 100%;
+	text-align: center;
+	margin-top: 64rpx;
+}
+.top-sale > text {
+	display: block;
+}

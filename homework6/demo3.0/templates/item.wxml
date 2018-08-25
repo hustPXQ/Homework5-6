@@ -1,0 +1,23 @@
+<template name="list-item">
+	<view class="item-container">
+		<view class='item-main item-main-{{ index % 2 == 0 ? "left" : "right" }}'>
+			<text class='item-name text-center'>{{obj.name}}</text>
+			<image class='item-image' mode='aspectFill' src="{{obj.img}}" data-id="{{obj.id}}" bindtap="onItemClick"></image>
+			<view class="item-info clearfix">
+				<text class="item-price">￥{{obj.price}}</text>
+				<view class="item-info-like like {{obj.like ? 'active' : ''}}" catchtap="onLikeClick" data-id='{{obj.id}}'></view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<template name='tmp-base'>
+	<view class="tmp-base-outer">
+		<text class="tmp-base-item-name">{{item.name}}</text>
+		<image class="tmp-base-item-image" mode='aspectFill' src='{{item.src}}' data='{{item}}' bindtap="onItemClick"></image>
+		<view class="tmp-base-item-info">
+			<text class="tmp-base-item-price">￥{{item.price}}</text>
+			<view class="tmp-base-item-like like {{item.like ? 'active' : ''}}" catchtap='onLikeClick' data="{{item}}"></view>
+		</view>
+	</view>
+</template>

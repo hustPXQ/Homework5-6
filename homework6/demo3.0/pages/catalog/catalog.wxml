@@ -1,0 +1,11 @@
+<block wx:for="{{catalogs}}" wx:for-index="i">
+<view class='catalog' data-catalog='{{item.name}}' bindtap='onTap'>
+	<image class="img-bg hero-img" mode="aspectFill" src="/assets/catalog/{{catalogs[i].img}}"/>
+	<view class="mask">
+	</view>
+	<view class='middle'>
+		<text class="title txt-white">{{catalogs[i].title}}</text>
+		<!-- <text class="subtitle txt-white">{{catalogs[i].desc}}</text> -->
+	</view>
+</view>
+</block>

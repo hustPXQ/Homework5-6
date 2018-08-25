@@ -1,0 +1,96 @@
+.detail-image {
+	width: 100%;
+	height: 516rpx;
+}
+.item-info {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 40rpx;
+	padding-right: 40rpx;
+	color: #248F53;
+}
+.like {
+	width: 25rpx;
+	height: 25rpx;
+}
+.item-price {
+	float: right;
+	margin-right: 16rpx;
+	font-size: 36rpx;
+}
+.desc-container {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 26rpx;
+	padding-left: 56rpx;
+	padding-right: 56rpx;
+	margin-bottom: 54rpx;
+}
+.item-desc {
+	width: 100%;
+	font-size: 24rpx;
+	color: #767676;
+}
+.item-controls {
+	width: 100%;
+	border-top: #E5E5E5 2rpx solid;
+	border-bottom: #E5E5E5 2rpx solid;
+	color: #767676;
+	height: 216rpx;
+	margin-bottom: 244rpx;
+	font-size: 0;
+}
+.item-number {
+	border-right: #E5E5E5 2rpx solid;
+}
+.item-control {
+	width: 50%;
+	height: 100%;
+	padding: 40rpx 0rpx;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 32rpx;
+}
+.item-control.item-size {
+	padding: 40rpx 32rpx;
+}
+.item-control-caption {
+	display: block;
+}
+.number-control,
+.size-control {
+	display: block;
+	width: 100%;
+	padding-top: 32rpx;
+	font-size: 32rpx;
+}
+.number-modification {
+	width: 33%;
+	display: inline-block;
+	font-size: 40rpx;
+}
+.picker-angle {
+	width: 20rpx;
+	height: 20rpx;
+	float: right;
+}
+.select-product {
+	color: #fff;
+	background-color: #248F53;
+	border-radius: 0;
+	border: none;
+	width: 692rpx;
+	height: 152rpx;
+	position: fixed;
+	bottom: 26rpx;
+	left: 30rpx;
+}
+.total-price {
+	margin-right: 46rpx;
+}
+.select-product text {
+	line-height: 152rpx;
+}
+.button-hover {
+	background-color: #18673B;
+}
